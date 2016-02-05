@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <html lang="zh">
+  	<head>
+  	  <meta charset="UTF-8">	
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  	  <style type="text/css">
+        *{margin: 0;
+          padding: 0;
+        }
+  	  	html {
+          width: 100%;
+          background-color: #eff0f4;
+        }
+        #header {
+          position: fixed;
+          height: 6em;
+          width: 100%;
+          background-color: #5fc0cd;
+        }
+        #span-left {
+          position: absolute;
+          left: 0.8em;
+          top: 0.8em;
+          font-family: 'STHeitiSC Light';
+          font-size: 2em;
+          color: #ffffff;
+        }
+        #span-center {
+          position: absolute;
+          margin: 0.7em;
+          width: 100%;
+          text-align: center;
+          font-family: 'STHeitiSC Light';
+          font-size: 2.25em;
+          color: #ffffff;
+        }
+  	  	#box-sign {
+          position: absolute;
+          top: 7em; 
+  	  	  width: 100%;
+  	  	  height: 6em;
+          background-color: #ffffff;
+  	  	}
+        #box-sign2 {
+          position: relative;
+          top: 14em; 
+          width: 100%;
+          height: 6em;
+          background-color: #ffffff;
+        }
+  	  	.icon {
+  	  		position: absolute;
+          left: 1.2em;
+          top: 1.3em;
+  	  	}
+  	  	.input {
+          position: absolute;
+          top: 1.3em;
+          left: 4em;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-left: #e1e5e7 solid 2px;
+          font-family: STHeitiSC;
+          font-size: 1.5em;
+          color: #e1e5e7;
+  	  	}
+        #submit {
+          position: relative;
+          top: 10em;
+          width: 100%;
+          height: 3em;
+          background-color: #5fc0cd;
+          text-align: center;
+          font-family: 'STHeitiSC Light';
+          font-size: 2em;
+          color: #ffffff;
+        }
+        @media screen and (max-width: 360px){
+          html {font-size: 60%;}
+          .input {
+            position: absolute;
+            top: 2em;
+            left: 5em;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+            border-left: #e1e5e7 solid 2px;
+            font-family: STHeitiSC;
+            font-size: 1.5em;
+            color: #e1e5e7;
+        }
+        }
+      </style>
+    </head>
+    <body>
+      <div id="header">
+        <span id="span-left">关闭</span>
+        <span id="span-center">登陆</span>
+      </div>
+
+      <div id="box-sign"> 
+        <img class="icon" src="images-task4/icon-1.png" alt="phone number"></img>
+        <input class="input" type="text" name="phone_number" placeholder="请输入手机号" />
+      </div>
+
+      <div id="box-sign2">
+        <img class="icon" src="images-task4/icon-2.png" alt="password"></img>
+        <input class="input" type="text" name="passzord" placeholder="请输入密码" />
+      </div>
+
+      <input id="submit" type="submit" value="登陆" />
+
+    </body>
+  </html>
